@@ -8,18 +8,15 @@ If you use this pipeline, or part of it, please cite:
 * the [RADMC-3D](https://ui.adsabs.harvard.edu/abs/2012ascl.soft02015D/abstract) code
 * the paper presenting and validating the pipeline: [Sinigaglia et al. (2025), A&A, in press](https://ui.adsabs.harvard.edu/abs/2024arXiv241208609S/abstract) 
 
-## Installation and usage
+## Installation and setup
 
-As recommended by the documentation, it is strongly advised to clear the main directory from any input/configuration file, coming e.g. from previos runs. This can be done by either initializing a new fresh direcotry, or by executing
-```
-python3 cleanoutdirall.py
-```
+The first step consist in installing and compiling the RADMC-3D. We refer to the [installation documentation](https://www.ita.uni-heidelberg.de/~dullemond/software/radmc-3d/manual_radmc3d/installation.html) for detailed isntructions on how to do it. 
 
-The pipeline consists in a series of scripts which performs all the modelling required by the RADMC-3D code and coordinate execution of the different phases (dust continuum transfer, H2/HI splitting, line transfer). 
+The rest of the setup of the code is straightforward. Beside the RADMC-3D executable, the pipeline consists in a series ofPython  scripts which perform all the modelling required by the RADMC-3D code and coordinate execution of the different phases (dust continuum transfer, H2/HI splitting, line transfer). 
 
-The code requires the following packages: NumPy (tested version 1.26.0), SciPy (tested version 1.12.0) and [Numba](https://numba.pydata.org) (tested version 0.58.1). 
+The code requires only the following packages: NumPy (tested version 1.26.0), SciPy (tested version 1.12.0) and [Numba](https://numba.pydata.org) (tested version 0.58.1). 
 
-Also, the opacity computation requires adding the 'compute_opacity' directory to your PYTHONPATH by either executing the following command before running (must be done every time one runs in a new shell):
+Also, the opacity computation requires adding the ```compute_opacity``` directory to your PYTHONPATH by either executing the following command before running (must be done every time one runs in a new shell):
 ```
 export PYTHONPATH="${PYTHONPATH}:/your_path_to_compute_opacity_directory"
 ```
@@ -29,8 +26,12 @@ Or, one can add the previous line to the ~/.bashrc file and then execute (can be
 source ~/.bashrc
 ```
 
+## Usage
 
-**Flowchart**
+As recommended by the documentation, it is strongly advised to clear the main directory from any input/configuration file, coming e.g. from previos runs. This can be done by either initializing a new fresh direcotry, or by executing
+```
+python3 cleanoutdirall.py
+```
 
 1) from the 'sph_interpolation' directory: submit the SPH interpolation job executing
 ```
