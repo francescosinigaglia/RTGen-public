@@ -28,18 +28,22 @@ source ~/.bashrc
 
 ## Usage
 
-As recommended by the documentation, it is strongly advised to clear the main directory from any input/configuration file, coming e.g. from previos runs. This can be done by either initializing a new fresh direcotry, or by executing
+The input parameters are set in the ```ìnput/input_params.py``` script.
+
+As recommended by the documentation, it is strongly advised to clear the main directory from any input/configuration file, coming e.g. from previos runs. This can be done by either initializing a new fresh directory, or by executing
 ```
 python3 cleanoutdirall.py
 ```
 
-1) from the 'sph_interpolation' directory: submit the SPH interpolation job executing
+Afterwards:
+
+1) from the ```sph_interpolation``` directory: submit the SPH interpolation job by executing
 ```
 sbatch submit_interpolation.sh
 ```
 
 
-2) from the 'stars_model' directory: submit the stellar modelling job executing 
+2) from the ```stars_model``` directory: submit the stellar modelling job by executing 
 ```
 sbatch submit_stellar_modelling.sh
 ```
@@ -49,15 +53,7 @@ sbatch submit_stellar_modelling.sh
 sbatch submit_master_pipeline.sh
 ```
 
-To fit the H2-to-CO conversion factor/function, from the 'line_transfer' directory execute
-```
-sbatch submit_fit_cocoversion.sh
-```
-
-
-All the relevant input parameters can be changed in 'input/input_params.py'.
-
-The code and the input parameters come with no warrranty. Please, always check the physical meaning of you results, 
+The code and the input parameters come with no warrranty. Please, always check the physical meaning of you results. 
 
 
 
