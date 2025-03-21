@@ -30,7 +30,7 @@ source ~/.bashrc
 
 The input parameters are set in the ```ìnput/input_params.py``` script.
 
-As recommended by the documentation, it is strongly advised to clear the main directory from any input/configuration file, coming e.g. from previos runs. This can be done by either initializing a new fresh directory, or by executing
+As recommended by the documentation, it is strongly advised to clear the main directory from any input/configuration file, coming e.g. from previous runs. This can be done by either initializing a new fresh directory, or by executing
 ```
 python3 cleanoutdirall.py
 ```
