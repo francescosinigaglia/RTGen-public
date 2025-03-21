@@ -53,7 +53,7 @@ sbatch submit_stellar_modelling.sh
 sbatch submit_master_pipeline.sh
 ```
 
-The code and the input parameters come with no warrranty. Please, always check the physical meaning of you results. 
+The code and the input parameters come with no warrranty. Please, always check the physical meaning of your results. 
 
 
 
