@@ -1,7 +1,12 @@
-# rt-sims
+# RTGen
+
 This repository contains the pipeline to run radiative transfer simulations of galaxies using the [RADMC-3D](https://www.ita.uni-heidelberg.de/~dullemond/software/radmc-3d/) code by Cornelis Dullemond. 
 
-Please refer to the RADMC-3D documentation for an extensive and detailed discussion of all the possible options and computations that the code can perform. 
+Please refer to the RADMC-3D documentation for an extensive and detailed discussion of all the possible options and computations that the code can perform.
+
+If you use the pipeline or part of it, please cite:
+* the [RADMC-3D](https://ui.adsabs.harvard.edu/abs/2012ascl.soft02015D/abstract) code
+* the paper presenting this pipeline: [Sinigaglia et al. (2025), A&A, in press](https://ui.adsabs.harvard.edu/abs/2024arXiv241208609S/abstract) 
 
 As recommended by the documentation, it is strongly advised to clear the main directory from any input/configuration file, coming e.g. from previos runs. This can be done by either initializing a new fresh direcotry, or by executing
 ```
