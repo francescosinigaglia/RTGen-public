@@ -12,7 +12,7 @@ If you use this pipeline, or part of it, please cite:
 
 The first step consist in installing and compiling the RADMC-3D. We refer to the [installation documentation](https://www.ita.uni-heidelberg.de/~dullemond/software/radmc-3d/manual_radmc3d/installation.html) for detailed isntructions on how to do it. 
 
-The rest of the setup of the code is straightforward. Beside the RADMC-3D executable, the pipeline consists in a series ofPython  scripts which perform all the modelling required by the RADMC-3D code and coordinate execution of the different phases (dust continuum transfer, H2/HI splitting, line transfer). 
+The rest of the setup of the code is straightforward. Beside the RADMC-3D executable, the pipeline consists in a series of Python scripts which perform all the modelling required by the RADMC-3D code and coordinate execution of the different phases (dust continuum transfer, H2/HI splitting, line transfer). 
 
 The code requires only the following packages: NumPy (tested version 1.26.0), SciPy (tested version 1.12.0) and [Numba](https://numba.pydata.org) (tested version 0.58.1). 
 
