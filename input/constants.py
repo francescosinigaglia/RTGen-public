@@ -1,0 +1,19 @@
+# PHYSICAL CONSTANTS - DO NOT CHANGE
+au  = 1.49598e13         # Astronomical Unit       [cm]
+pc  = 3.08572e18         # Parsec                  [cm]
+ms  = 1.98892e33         # Solar mass              [g]
+ts  = 5.78e3             # Solar temperature       [K]
+ls  = 3.8525e33          # Solar luminosity        [erg/s]
+rs  = 6.96e10            # Solar radius            [cm]
+zs = 0.0134              # Solar metallicity
+kpc = 1e3 * pc
+kb = 1.380649e-16        # Boltzmann constant      [erg/K]
+cc = 2.997924e10         # Speed of light          [cm/s
+hh = 6.626176e-34        # Planck constant         [J s]
+amu = 1.660539e4         # atomic mass unit        [g]                     
+CO_molmass = 28.010      # molar mass of CO        [g/mol]                                                
+avnum = 6.022140e23      # Avogadro number    
+sil_dust_density = 3.710   #                       [g/cm^3]                                                                                                
+carb_dust_density = 1.800  #                       [g/cm^3]  
+ev_per_joule = 6.241509e18 #                       [ev/J]
+mhi = 1.6735e-24         # HI atom mass            [g]  

@@ -1,0 +1,16 @@
+import os
+
+os.system('rm *inp')
+os.system('rm *inp~')
+os.system('rm *out')
+os.system('rm *out~')
+#os.system('rm ../output/*pdf')
+os.system('rm *DAT')
+os.system('rm *dat')
+#os.system('rm ../output/*TXT')
+#os.system('rm ../output/*txt')
+os.system('rm sph_interpolation/*npy')
+os.system('rm sph_interpolation/*txt')
+os.system('rm input/*DAT')
+os.system('rm input/*pdf')
+os.system('rm input/star_clusters.TXT')
